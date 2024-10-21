@@ -1,0 +1,61 @@
+# requirements.txt for BitNet CUDA project
+
+# CUDA toolkit (not pip-installable, must be installed separately)
+# Minimum version: CUDA 11.0
+
+# PyTorch with CUDA support
+torch>=1.7.0
+
+# NumPy for CPU-based operations
+numpy>=1.19.0
+
+# NVIDIA APEX for mixed precision training (optional)
+apex
+
+# CuPy for additional CUDA operations
+cupy-cuda110  # Use appropriate version matching your CUDA installation
+
+# Pytest for running tests
+pytest>=6.0.0
+
+# Matplotlib for visualization (if needed)
+matplotlib>=3.3.0
+
+# tqdm for progress bars
+tqdm>=4.50.0
+
+# Pillow for image processing (if needed)
+Pillow>=8.0.0
+
+# PyYAML for configuration file parsing
+PyYAML>=5.3.0
+
+# Tensorboard for logging and visualization
+tensorboard>=2.4.0
+
+# NVIDIA DALI for data loading and preprocessing (optional)
+nvidia-dali-cuda110  # Use appropriate version matching your CUDA installation
+
+# Numba for JIT compilation (optional)
+numba>=0.51.0
+
+# Pandas for data manipulation (if needed)
+pandas>=1.1.0
+
+# SciPy for scientific computing (if needed)
+scipy>=1.5.0
+
+# Jupyter for interactive development (optional)
+jupyter
+
+# Black for code formatting (development only)
+black
+
+# Flake8 for linting (development only)
+flake8
+
+# MyPy for static type checking (development only)
+mypy
+
+# NVIDIA Nsight Systems for profiling (not pip-installable, must be installed separately)
+# NVIDIA Nsight Compute for kernel analysis (not pip-installable, must be installed separately)
